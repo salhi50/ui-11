@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- framework -->
+  <link rel="stylesheet" href="css/wspace.css">
+  <!-- scss -->
+  <link rel="stylesheet" href="scss/begin.css">
+  <!-- ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>UI Design-11</title>
+  <meta name="description" content="Dicover top 100 UI design for the web developement">
+  <meta property="og:title" content="100 UI design">
+  <meta property="og:description" content="Discover the best ui design for web developement">
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+  <body>
+    <!-- main header -->
+    <header class="relative white-bg sticky t-pos-initial">
+      <div class="container">
+        <ul class="header--list flex align-center flex-between">
+          <!-- left header -->
+          <li class="header--left flex align-center">
+            <!-- menu mobile -->
+            <ion-icon name="menu-outline" class="header--menu-icon s-hidden pdr-15 black-color cursor" id="showNav"></ion-icon>
+            <ion-icon name="close-outline" class="header--menu-icon s-hidden pdr-15 black-color cursor d-none" id="closeNav"></ion-icon>
+            <!-- logo -->
+            <a href="#"><h3 class="header--logo">Untitled UI</h3></a>
+            <!-- nav -->
+            <nav class="header--nav flex align-center mgl-2rem d-hidden">
+              <!-- home link -->
+              <a href="#" class="grey-color header--link mgr-1h5rem">Home</a>
+              <!-- products -->
+              <a href="#" class="grey-color header--link mgr-1h5rem flex align-center hover-me">
+                <span>Click me</span>
+                <ion-icon name="chevron-down-outline" class="header--nav-icon pdl-5"></ion-icon>
+              </a>
+              <!-- pricing -->
+              <a href="#" class="grey-color header--link mgr-1h5rem">Pricing</a>
+            </nav>
+          </li>
+          <!-- header right -->
+          <li class="header--right">
+            <div class="header--profil flex align-center cursor relative" id="profil">
+              <img src="imgs/profil.jpg" alt="">
+              <!-- profil list settings -->
+              <div class="profil white-bg absolute index-last">
+                <ul class="profil--list">
+                  <li class="profil--up flex align-center pdx-15 pdy-10 b-btm">
+                    <!-- profil avatar -->
+                    <div class="profil--avatar shrink-none">
+                      <img src="imgs/profil.jpg" alt="">
+                    </div>
+                    <!-- profil details -->
+                    <div class="profil--details pdl-10">
+                      <h6 class="profil--title black-color">Pain</h6>
+                      <p class="profil--gmail grey-color">pain@gmail.com</p>
+                    </div>
+                  </li>
+                  <!-- profil list items 1-->
+                  <li class="profil--box pdx-15 pdy-10">
+                    <span class="black-color">View profile</span>
+                  </li>
+                  <li class="profil--box pdx-15 pdy-10">
+                    <span class="black-color">Settings</span>
+                  </li>
+                  <li class="profil--box pdx-15 pdy-10 b-btm">
+                    <span class="black-color">Keyboard shortcuts</span>
+                  </li>
+                  <!-- profil list items 2 -->
+                  <li class="profil--box pdx-15 pdy-10">
+                    <span class="black-color">Changelog</span>
+                  </li>
+                  <li class="profil--box pdx-15 pdy-10">
+                    <span class="black-color">Support</span>
+                  </li>
+                  <li class="profil--box pdx-15 pdy-10 b-btm">
+                    <span class="black-color">API</span>
+                  </li>
+                  <!-- profil list items 3 -->
+                  <li class="profil--box pdx-15 pdy-10">
+                    <span class="black-color">Log out</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- products navigation menu -->
+      <div class="products absolute white-bg d-hidden index-3 d-none">
+        <!-- products container -->
+        <div class="products--container flex container flex-wrap">
+          <!-- left products -->
+          <div class="products--left div-50">
+            <!-- product left titles -->
+            <div class="product--left-titles flex mgb-1rem pdt-25">
+              <h6 class="product--heading title-prod div-50">Products</h6>
+              <h6 class="product--heading title-cpm div-50">Company</h6>
+            </div>
+            <div class="product--left-container grid">
+              <!-- product item -->
+              <div class="product--box cursor flex">
+                <ion-icon name="book-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Blog</h6>
+                  <p class="product--description grey-color">The latest industry news, updates, interesting articles and info.</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="flag-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">About us</h6>
+                  <p class="product--description grey-color">Learn about our story, our mission statement, and our roadmap.</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="flash-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Customer stories</h6>
+                  <p class="product--description grey-color">Learn how our customers aer making big changes to their tech stack.</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="chatbubble-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Press</h6>
+                  <p class="product--description grey-color">News and writings, press releases, and press resources.</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="play-circle-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Video tutorials</h6>
+                  <p class="product--description grey-color">Get up and running on new features and techniques with our tutorials</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="people-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color relative">
+                    <span>Careers</span>
+                    <span class="hiring absolute green-color">We're hiring!</span>
+                  </h6>
+                  <p class="product--description grey-color">We're always looking for talented people. Join our team!</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="document-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Documentation</h6>
+                  <p class="product--description grey-color">All the boring stuff that you (hopefully won't need, written by our team.</p>
+                </div>
+              </div>
+              <div class="product--box cursor flex">
+                <ion-icon name="folder-outline" class="product--icon purple-color shrink-none"></ion-icon>
+                <!-- product details -->
+                <div class="product--details pdl-20">
+                  <h6 class="product--title black-color">Legal</h6>
+                  <p class="product--description grey-color">All the boring stuff that we Dan from legal made us add to the site.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- product right side -->
+          <div class="products--right div-50">
+            <div class="product--right-container">
+              <h6 class="product--heading mgb-1h5rem">Resources</h6>
+              <!-- right product box -->
+              <div class="product--right-boxes">
+                <div class="product--right-box flex align-center mgb-2rem">
+                  <div class="product--right-img div-30">
+                    <img src="imgs/one.jpg" alt="" class="product--img">
+                  </div>
+                  <!-- product right details -->
+                  <div class="product--right-details pdl-20 div-60">
+                    <h6 class="product--right-title black-color">How to get started</h6>
+                    <p class="product--right-description grey-color">Jump right in - get an overview of the basic and get started on building.</p>
+                    <!-- product watch video -->
+                    <div class="product--watch purple-color mgt-half-1rem flex align-center">
+                      <ion-icon name="play-circle-outline" class="product--watch-icon"></ion-icon>
+                      <span class="mgl-half-1rem fw-500">Watch video</span>
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="product--right-box flex align-center mgb-2rem">
+                  <div class="product--right-img div-30">
+                    <img src="imgs/two.jpg" alt="" class="product--img">
+                  </div>
+                  <!-- product right details -->
+                  <div class="product--right-details pdl-20 div-60">
+                    <h6 class="product--right-title black-color">Advanced features</h6>
+                    <p class="product--right-description grey-color">Once you're ready, learn more about advanced analytics, features and shortcuts.</p>
+                    <!-- product watch video -->
+                    <div class="product--watch purple-color mgt-half-1rem flex align-center">
+                      <ion-icon name="play-circle-outline" class="product--watch-icon"></ion-icon>
+                      <span class="mgl-half-1rem fw-500">Watch video</span>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- nav mobile menu -->
+      <nav class="phone absolute s-hidden flex fd-col flex-between">
+        <div class="phone--up mgb-2rem">
+          <ul class="phone--list">
+            <li class="phone--list pdy-15 pdx-20">
+              <span>Home</span>
+            </li>
+            <li class="phone--list pdy-15 pdx-20 flex align-center flex-between">
+              <span>Products</span>
+              <ion-icon name="chevron-down-outline" class="phone--icon black-color"></ion-icon>
+            </li>
+            <li class="phone--list pdy-15 pdx-20 flex align-center flex-between">
+              <span>Ressources</span>
+              <ion-icon name="chevron-down-outline" class="phone--icon black-color"></ion-icon>
+            </li>
+            <li class="phone--list pdy-15 pdx-20">
+              <span>Pricing</span>
+            </li>
+          </ul>
+          <ul class="phone--footer grid pd-20">
+            <li class="grey-color cursor fw-500">About us</li>
+            <li class="grey-color cursor fw-500">Press</li>
+            <li class="grey-color cursor fw-500">Legal</li>
+            <li class="grey-color cursor fw-500">Careers</li>
+            <li class="grey-color cursor fw-500">Support</li>
+            <li class="grey-color cursor fw-500">Contact</li>
+            <li class="grey-color cursor fw-500">Sitemap</li>
+            <li class="grey-color cursor fw-500">Settings</li>
+          </ul>
+        </div>
+        <div class="phone--btns mgy-1rem pdx-15 full-width">
+          <button class="phone--sign-btn btn purple-bg w-color rounded p-mid full-width">
+            Sign up
+          </button>
+          <button class="phone--log-btn btn purple-color rounded p-mid mgt-half-1rem full-width">Log in</button>
+        </div>
+      </nav>
+    </header>
+  </body>
+<script src="js/jquery.js"></script>
+<script>
+  // SOME JAVASCRIPT
+
+  // DOM ELEMENTS
+  let link = document.querySelector('.hover-me');
+  let products = document.querySelector('.products');
+
+  // TOGGLE NAVIGATION
+  link.addEventListener('click', () => {
+    products.classList.toggle('d-none');
+  })
+</script>
+</html>

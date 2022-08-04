@@ -1,0 +1,258 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+html {
+    @media screen and (max-width: 400px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 300px) {
+        font-size: 13px;
+    }
+    @media screen and (max-width: 250px) {
+        font-size: 11px;
+    }
+    @media screen and (max-width: 200px) {
+        font-size: 10px;
+    }
+}
+// MAIN components
+
+.purple-color {
+    color: $main-color;
+}
+.light-purple {
+    color: $main-light-color-2;
+}
+.grey-color {
+    color: $grey-color;
+}
+.green-color {
+    color: $seconday-color;
+}
+.black-color {
+    color: $black-color;
+}
+
+header {
+    @include media(mobile) {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    padding: rem(20) 0;
+    .header--profil img {
+        width: rem(40);
+        height: rem(40);
+        border-radius: 50%;
+        @include media(mobile) {
+            width: rem(35);
+            height: rem(35);
+        }
+    }
+    .header--link {
+        font-size: $font-medium-2;
+        transition: color .2s ease-in-out;
+    }
+    .header--menu-icon {
+        font-size: 1.5rem;
+    }
+    .header--link:hover {
+        color: #2a2a2a;
+    }
+    // start with the product
+    .products {
+        left: 0;
+        right: 0;
+        top: 80px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        box-shadow: 0 4px 7px rgba(0,0,0,.05);
+    }
+    .product--icon {
+        font-size: 1.3rem;
+        transform: translateY(1px);
+    }
+    .product--description {
+        font-size: $font-small;
+        margin-top: 2px;
+        font-weight: 500;
+    }
+    .product--box {
+        padding: 12px 15px 12px 12px;
+        border-radius: 4px;
+        &:hover {
+            color: $main-color !important;
+            background-color: $main-light-color;
+        }
+        &:hover .product--title,&:hover .product--description{
+            color: $main-color !important;
+        }
+    } 
+    .product--left-container {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 18px;
+        padding: 0 15px 25px 15px;
+    }
+    .hiring {
+        font-size: 12px;
+        background-color: $secondary-light-color;
+        border-radius: 15px;
+        padding: 2px 7px;
+        transform: translate(10px,2px);
+    }
+    .product--img {
+        max-height: 100px;
+        width: 100%;
+        border-radius: 6px;
+        flex-shrink: 0 !important;
+        object-fit: cover;
+    }
+    .product--right-description {
+        font-size: $font-small;
+        margin-top: 2px;
+    }
+    .product--watch-icon {
+        font-size: 1.3rem;
+    }
+    .product--watch span {
+        font-size: $font-medium;
+    }
+    .product--heading {
+        color: $main-color;
+        font-size: $font-small;
+    }
+    .products--right {
+        background-color: #fafafa;
+    }
+    .product--right-container {
+        padding: 25px;
+    }
+    .product--right-title, .product--watch {
+        cursor: pointer;
+    }
+    .title-prod {
+        transform: translateX(15px);
+    }
+    .title-cpm {
+        transform: translateX(18px);
+    }
+    // start with medium screen
+    .products--left, .products--right {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            width: 100% !important;
+        }
+    }
+    .product--left-container {
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            grid-template-columns: repeat(4,1fr);
+            gap: 18px;
+        }
+    }
+    .product--right-boxes {
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .product--right-box {
+        @media screen and (min-width: 1024px) and (max-width: 1200px) {
+            width: 50% !important;
+        }
+    }
+    // start with small screeen
+    .product--left-container {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            grid-template-columns: repeat(3,1fr);
+            gap: 18px;
+        }
+    }
+    .product--right-boxes {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+            display: block;
+        }
+    }
+    .product--right-box {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100% !important;
+        }
+    }
+    .product--img {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            max-height: 130px;
+        }
+    }
+    .title-cpm {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            display: none !important;
+        }
+    }
+    .title-prod {
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+    // start with the profil hover
+    .profil {
+        top: rem(55);
+        display: none;
+        right: 0;
+        box-shadow: 2px 4px 7px rgba(0,0,0,.05), 
+                    -4px 0 6px rgba(0,0,0,.05);
+        border: 1px solid #ededed;
+        @include media(mobile) {
+            margin: 0 .5rem;
+        }
+    }
+    .profil--list {
+        min-width: 200px;
+        overflow: auto;
+        @include media(mobile) {
+            width: 200px;
+        }
+    }
+    .profil--title {
+        font-size: .9rem;
+    }
+    .profil--gmail {
+        font-size: $font-small;
+    }
+    .profil--box {
+        font-size: $font-medium;
+        &:hover {
+            background-color: #f1f1f1;
+        }
+    }
+    .b-btm {
+        border-bottom: 1px solid #f1f1f1;
+    }
+    // start with the nav phone list
+    .phone {
+        top: rem(85);
+        display: none;
+        z-index: 4;
+        width: 100% !important;
+        right: 0;
+        left: 0;
+        min-height: calc(100vh - rem(85));
+    }
+    .phone--list {
+        color: #000;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: $font-large;
+    }
+    // phone footer
+    .phone--footer {
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(15);
+        font-size: $font-big;
+        border-top: 1px solid #e5e5e5;
+    }
+    .phone--log-btn {
+        background-color: $main-light-color-2;
+    }
+    .phone--btns button {
+        font-size: $font-medium-2;
+        min-height: rem(45) !important;
+        font-weight: 600;
+    }
+}

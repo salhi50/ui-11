@@ -1,0 +1,268 @@
+/* Variables */ /* Function list*/ /* mixins list */ /* Function list*/
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.purple-color {
+  color: #866ad5;
+}
+
+.light-purple {
+  color: #F4EBFE;
+}
+
+.grey-color {
+  color: #717277;
+}
+
+.green-color {
+  color: #2b9165;
+}
+
+.black-color {
+  color: #4D525D;
+}
+
+header {
+  padding: 1.25rem 0;
+}
+@media screen and (max-width: 768px) {
+  header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+header .header--profil img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  header .header--profil img {
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+}
+header .header--link {
+  font-size: 0.9375rem;
+  transition: color 0.2s ease-in-out;
+}
+header .header--menu-icon {
+  font-size: 1.5rem;
+}
+header .header--link:hover {
+  color: #2a2a2a;
+}
+header .products {
+  left: 0;
+  right: 0;
+  top: 80px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.05);
+}
+header .product--icon {
+  font-size: 1.3rem;
+  transform: translateY(1px);
+}
+header .product--description {
+  font-size: 0.8125rem;
+  margin-top: 2px;
+  font-weight: 500;
+}
+header .product--box {
+  padding: 12px 15px 12px 12px;
+  border-radius: 4px;
+}
+header .product--box:hover {
+  color: #866ad5 !important;
+  background-color: #F8F5FE;
+}
+header .product--box:hover .product--title, header .product--box:hover .product--description {
+  color: #866ad5 !important;
+}
+header .product--left-container {
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+  padding: 0 15px 25px 15px;
+}
+header .hiring {
+  font-size: 12px;
+  background-color: #ECFEF2;
+  border-radius: 15px;
+  padding: 2px 7px;
+  transform: translate(10px, 2px);
+}
+header .product--img {
+  max-height: 100px;
+  width: 100%;
+  border-radius: 6px;
+  flex-shrink: 0 !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .product--right-description {
+  font-size: 0.8125rem;
+  margin-top: 2px;
+}
+header .product--watch-icon {
+  font-size: 1.3rem;
+}
+header .product--watch span {
+  font-size: 0.875rem;
+}
+header .product--heading {
+  color: #866ad5;
+  font-size: 0.8125rem;
+}
+header .products--right {
+  background-color: #fafafa;
+}
+header .product--right-container {
+  padding: 25px;
+}
+header .product--right-title, header .product--watch {
+  cursor: pointer;
+}
+header .title-prod {
+  transform: translateX(15px);
+}
+header .title-cpm {
+  transform: translateX(18px);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  header .products--left, header .products--right {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .product--left-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .product--right-boxes {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .product--right-box {
+    width: 50% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .product--left-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .product--right-boxes {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .product--right-box {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .product--img {
+    max-height: 130px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .title-cpm {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .title-prod {
+    width: 100%;
+  }
+}
+header .profil {
+  top: 3.4375rem;
+  display: none;
+  right: 0;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.05), -4px 0 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ededed;
+}
+@media screen and (max-width: 768px) {
+  header .profil {
+    margin: 0 0.5rem;
+  }
+}
+header .profil--list {
+  min-width: 200px;
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  header .profil--list {
+    width: 200px;
+  }
+}
+header .profil--title {
+  font-size: 0.9rem;
+}
+header .profil--gmail {
+  font-size: 0.8125rem;
+}
+header .profil--box {
+  font-size: 0.875rem;
+}
+header .profil--box:hover {
+  background-color: #f1f1f1;
+}
+header .b-btm {
+  border-bottom: 1px solid #f1f1f1;
+}
+header .phone {
+  top: 5.3125rem;
+  display: none;
+  z-index: 4;
+  width: 100% !important;
+  right: 0;
+  left: 0;
+  min-height: calc(100vh - 5.3125rem);
+}
+header .phone--list {
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.0625rem;
+}
+header .phone--footer {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9375rem;
+  font-size: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+header .phone--log-btn {
+  background-color: #F4EBFE;
+}
+header .phone--btns button {
+  font-size: 0.9375rem;
+  min-height: 2.8125rem !important;
+  font-weight: 600;
+}/*# sourceMappingURL=begin.css.map */
